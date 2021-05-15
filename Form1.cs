@@ -19,7 +19,7 @@ namespace siguriaProjektiDesktop
             InitializeComponent();
         }
 
-        private void openFileBtn_Click(object sender, EventArgs e)
+        private void loadFileBtn_Click(object sender, EventArgs e)
         {
             Stream st;
             OpenFileDialog d1 = new OpenFileDialog();
@@ -33,7 +33,6 @@ namespace siguriaProjektiDesktop
                 }
             }
         }
-
         private void add(String letter, string frequency)
         {
             String[] row = { letter, frequency };
@@ -54,6 +53,8 @@ namespace siguriaProjektiDesktop
             allText = allText.Replace('!'.ToString(), string.Empty);
             allText = allText.Replace('?'.ToString(), string.Empty);
             allText = allText.Replace('\''.ToString(), string.Empty);
+            allText = allText.Replace('('.ToString(), string.Empty);
+            allText = allText.Replace(')'.ToString(), string.Empty);
             allText = allText.Replace(' '.ToString(), string.Empty);
       
 
@@ -83,16 +84,14 @@ namespace siguriaProjektiDesktop
             listView1.Sorting = SortOrder.Descending;                       
         }
 
-        
-        private void clearText_Click(object sender, EventArgs e)
+        private void clearData_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
             listView1.Clear();
             chart1.Series[0].Points.Clear();
         }
 
-
-        private void button1_Click(object sender, EventArgs e)
+        private void showDataBtn_Click(object sender, EventArgs e)
         {
             chart2.ChartAreas.FirstOrDefault().AxisX.Interval = 1;
             chart2.Series["Letters"].Points.AddXY('A'.ToString(), 8.12);
@@ -151,5 +150,6 @@ namespace siguriaProjektiDesktop
             keyValueTxt.Clear();
             decryptedText.Clear();
         }
+
     }
 }
