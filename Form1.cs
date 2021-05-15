@@ -48,6 +48,13 @@ namespace siguriaProjektiDesktop
         {
             String allText = textBox1.Text;
             allText = allText.ToUpper();
+            allText = allText.Replace('.'.ToString(), string.Empty);
+            allText = allText.Replace(','.ToString(), string.Empty);
+            allText = allText.Replace('-'.ToString(), string.Empty);
+            allText = allText.Replace('!'.ToString(), string.Empty);
+            allText = allText.Replace('?'.ToString(), string.Empty);
+            allText = allText.Replace('\''.ToString(), string.Empty);
+            allText = allText.Replace(' '.ToString(), string.Empty);
             //allText.Split('.', ' ', ',', '-', '!', '?');            
 
             while (allText.Length>0)
@@ -77,11 +84,7 @@ namespace siguriaProjektiDesktop
         private void clearText_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
-        }
-
-        private void clearFrequencyBtn_Click(object sender, EventArgs e)
-        {
             listView1.Clear();
-        }        
+        }          
     }
 }
