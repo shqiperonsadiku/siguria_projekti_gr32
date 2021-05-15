@@ -29,19 +29,16 @@ namespace siguriaProjektiDesktop
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.openFileBtn = new System.Windows.Forms.Button();
             this.getFrequencyBtn = new System.Windows.Forms.Button();
-            this.clearText = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.enterBtn = new System.Windows.Forms.Button();
@@ -50,6 +47,9 @@ namespace siguriaProjektiDesktop
             this.label2 = new System.Windows.Forms.Label();
             this.clearKeyBtn = new System.Windows.Forms.Button();
             this.keyValueTxt = new System.Windows.Forms.TextBox();
+            this.clearData = new System.Windows.Forms.Button();
+            this.loadFileBtn = new System.Windows.Forms.Button();
+            this.showDataBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.SuspendLayout();
@@ -62,16 +62,6 @@ namespace siguriaProjektiDesktop
             this.textBox1.Size = new System.Drawing.Size(915, 162);
             this.textBox1.TabIndex = 0;
             // 
-            // openFileBtn
-            // 
-            this.openFileBtn.Location = new System.Drawing.Point(12, 22);
-            this.openFileBtn.Name = "openFileBtn";
-            this.openFileBtn.Size = new System.Drawing.Size(75, 23);
-            this.openFileBtn.TabIndex = 4;
-            this.openFileBtn.Text = "Load File";
-            this.openFileBtn.UseVisualStyleBackColor = true;
-            this.openFileBtn.Click += new System.EventHandler(this.openFileBtn_Click);
-            // 
             // getFrequencyBtn
             // 
             this.getFrequencyBtn.Location = new System.Drawing.Point(12, 232);
@@ -81,16 +71,6 @@ namespace siguriaProjektiDesktop
             this.getFrequencyBtn.Text = "Get Frequency";
             this.getFrequencyBtn.UseVisualStyleBackColor = true;
             this.getFrequencyBtn.Click += new System.EventHandler(this.getFrequencyBtn_Click);
-            // 
-            // clearText
-            // 
-            this.clearText.Location = new System.Drawing.Point(93, 22);
-            this.clearText.Name = "clearText";
-            this.clearText.Size = new System.Drawing.Size(75, 23);
-            this.clearText.TabIndex = 6;
-            this.clearText.Text = "Clear Data";
-            this.clearText.UseVisualStyleBackColor = true;
-            this.clearText.Click += new System.EventHandler(this.clearText_Click);
             // 
             // listView1
             // 
@@ -113,44 +93,34 @@ namespace siguriaProjektiDesktop
             this.textBox2.TabIndex = 10;
             this.textBox2.Text = "English alphabet letters frequency";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 556);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(129, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Show data";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(173, 264);
             this.chart1.Name = "chart1";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Letters";
-            this.chart1.Series.Add(series3);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Letters";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(754, 257);
             this.chart1.TabIndex = 12;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea4.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.chart2.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(12, 585);
             this.chart2.Name = "chart2";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Letters";
-            this.chart2.Series.Add(series4);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Letters";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(915, 300);
             this.chart2.TabIndex = 13;
             this.chart2.Text = "chart2";
@@ -211,12 +181,45 @@ namespace siguriaProjektiDesktop
             this.keyValueTxt.Size = new System.Drawing.Size(112, 26);
             this.keyValueTxt.TabIndex = 23;
             // 
+            // clearData
+            // 
+            this.clearData.Location = new System.Drawing.Point(93, 22);
+            this.clearData.Name = "clearData";
+            this.clearData.Size = new System.Drawing.Size(75, 23);
+            this.clearData.TabIndex = 24;
+            this.clearData.Text = "Clear Data";
+            this.clearData.UseVisualStyleBackColor = true;
+            this.clearData.Click += new System.EventHandler(this.clearData_Click);
+            // 
+            // loadFileBtn
+            // 
+            this.loadFileBtn.Location = new System.Drawing.Point(12, 22);
+            this.loadFileBtn.Name = "loadFileBtn";
+            this.loadFileBtn.Size = new System.Drawing.Size(75, 23);
+            this.loadFileBtn.TabIndex = 25;
+            this.loadFileBtn.Text = "Load File";
+            this.loadFileBtn.UseVisualStyleBackColor = true;
+            this.loadFileBtn.Click += new System.EventHandler(this.loadFileBtn_Click);
+            // 
+            // showDataBtn
+            // 
+            this.showDataBtn.Location = new System.Drawing.Point(12, 553);
+            this.showDataBtn.Name = "showDataBtn";
+            this.showDataBtn.Size = new System.Drawing.Size(129, 23);
+            this.showDataBtn.TabIndex = 26;
+            this.showDataBtn.Text = "Show data";
+            this.showDataBtn.UseVisualStyleBackColor = true;
+            this.showDataBtn.Click += new System.EventHandler(this.showDataBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(951, 561);
+            this.ClientSize = new System.Drawing.Size(968, 561);
+            this.Controls.Add(this.showDataBtn);
+            this.Controls.Add(this.loadFileBtn);
+            this.Controls.Add(this.clearData);
             this.Controls.Add(this.keyValueTxt);
             this.Controls.Add(this.clearKeyBtn);
             this.Controls.Add(this.label2);
@@ -225,12 +228,9 @@ namespace siguriaProjektiDesktop
             this.Controls.Add(this.enterBtn);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.listView1);
-            this.Controls.Add(this.clearText);
             this.Controls.Add(this.getFrequencyBtn);
-            this.Controls.Add(this.openFileBtn);
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -244,12 +244,9 @@ namespace siguriaProjektiDesktop
         #endregion
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button openFileBtn;
         private System.Windows.Forms.Button getFrequencyBtn;
-        private System.Windows.Forms.Button clearText;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.Button enterBtn;
@@ -258,6 +255,9 @@ namespace siguriaProjektiDesktop
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button clearKeyBtn;
         private System.Windows.Forms.TextBox keyValueTxt;
+        private System.Windows.Forms.Button clearData;
+        private System.Windows.Forms.Button loadFileBtn;
+        private System.Windows.Forms.Button showDataBtn;
     }
 }
 
