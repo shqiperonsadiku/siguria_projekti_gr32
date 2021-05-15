@@ -1,7 +1,6 @@
 # siguria_projekti_gr32
 
-Programi ka per detyre gjetjen e frekuences se shkronjave ne menyre qe te behet zevendesimi i tyre me shkronjat me te perdorura ne gjuhen Angleze varesisht prej frekuences se
-gjetur, me qellim qe te gjindet plaintexti per codin e Cezarit.
+Programi ka per detyre gjetjen e frekuences se shkronjave ne menyre qe te behet zevendesimi i tyre me shkronjat me te perdorura ne gjuhen Angleze varesisht prej frekuences se gjetur, me qellim qe te gjindet plaintexti per codin e Cezarit.
 
 Programin e kam zhvilluar ne dy format per gjetjen e frekuences se shkronjave, pra ne Console Application dhe ne Desktop Application.
 **Tek Console App**, se pari kam kerku prej user qe te shtyp nje tekst, pastaj nga ai text permes string.Replace() kam zevendesuar shenjat e pikesimit dhe hapesirat me nje string.Empty,  ne menyre qe te llogaritet vetem frekuenca e shkronjave, pasiqe shenjat e pikesimit nuk kane shume rendesi per gjetjen e plaintext-it.
@@ -10,6 +9,6 @@ Ne While Loop e kam deklaru ni variabel countOfChar = 0 me ane te se ciles do te
 heren e ardhshme do te hyje ne for loop me nje anetar me pak per shkak te ketij rreshti te kodit : _inputText = inputText.Replace(inputText[0].ToString(), string.Empty);_,
 numri i shkronjave do te rritet per 1 nese ato perseriten.
 
-**Tek Desktop Ap**
+**Tek Desktop App**
 
 
