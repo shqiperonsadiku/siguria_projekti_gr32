@@ -46,7 +46,8 @@ namespace siguriaProjektiDesktop
         private void getFrequencyBtn_Click(object sender, EventArgs e)
         {
             String allText = textBox1.Text;
-            allText = allText.ToUpper();       
+            allText = allText.ToUpper();    
+            // Injorimi i shenjave te pikesimit dhe hapesirave ne tekst
             allText = allText.Replace('.'.ToString(), string.Empty);
             allText = allText.Replace(','.ToString(), string.Empty);
             allText = allText.Replace('-'.ToString(), string.Empty);
@@ -55,6 +56,8 @@ namespace siguriaProjektiDesktop
             allText = allText.Replace('\''.ToString(), string.Empty);
             allText = allText.Replace('('.ToString(), string.Empty);
             allText = allText.Replace(')'.ToString(), string.Empty);
+            allText = allText.Replace(':'.ToString(), string.Empty);
+            allText = allText.Replace(';'.ToString(), string.Empty);
             allText = allText.Replace(' '.ToString(), string.Empty);
       
 
@@ -122,22 +125,25 @@ namespace siguriaProjektiDesktop
             chart2.Series["Letters"].Points.AddXY('Z'.ToString(), 0.07);
         }
 
-        private char Encrypt(char ch, int code)
+        private char Encrypt(char ch, int key)
         {
             if (!char.IsLetter(ch)) return ch;
 
             char offset = char.IsUpper(ch) ? 'A' : 'a';
-            return (char)((ch + code - offset) % 26 + offset);
+            return (char)((ch + key - offset) % 26 + offset); //llogaritja e zhvendosjes se shkronjave
         }
 
-        private string Encrypt(string input, int code)
+        private string Encrypt(string plaintext, int key)
         {
-            return new string(input.Select(ch => Encrypt(ch, code)).ToArray());
+            //kthimi i tekstit te enkriptuar duke e perdorur funksionin Encrypt per karaktere dhe
+            //duke e kthy ate si array(apo tekst te plote) 
+            return new string(plaintext.Select(ch => Encrypt(ch, key)).ToArray());
         }
 
-        private string Decrypt(string input, int code)
+        private string Decrypt(string ciphertext, int key)
         {
-            return Encrypt(input, 26 - code);
+            //Dekriptimi i tekstit 
+            return Encrypt(ciphertext, 26 - key);
         }
 
         private void enterBtn_Click(object sender, EventArgs e)
