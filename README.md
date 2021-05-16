@@ -1,5 +1,5 @@
-# siguria_projekti_gr32
-
+# Siguria e te dhenave GRUPI 32
+# Sulmimi i kodit te Cezarit duke mesuar frekuencen e shkronjave nga ndonje tekst file.
 Programi ka per detyre gjetjen e frekuences se shkronjave ne menyre qe te behet zevendesimi i tyre me shkronjat me te perdorura ne gjuhen Angleze varesisht prej frekuences se gjetur, me qellim qe te gjindet plaintexti per codin e Cezarit.
 
 Programin e kam zhvilluar ne dy format per gjetjen e frekuences se shkronjave, pra ne Console Application dhe ne Desktop Application.
@@ -10,5 +10,5 @@ heren e ardhshme do te hyje ne for loop me nje anetar me pak per shkak te ketij 
 numri i shkronjave do te rritet per 1 nese ato perseriten.
 
 **Tek Desktop App**
-
+Ne fillim te ofrohet mundesia te besh load nje file nga PC i juaj, ose mund ta shkruash tekstin te cilin do ta dekriptosh permes celesit qe gjindet nga frekuences se shkronjave. Kete e kam realizuar permes nje textBox-i ne te cilin mund ta shkruash tekstin, ose nese klikon butonin _Load File_, permes _OpenFileDialog_ in build funksionit, text file-in qe e selekton nga PC shfaqet ne po ate text box. Pastaj e kemi butonin _**Get Frequency**_ i cili bene llogaritjen e frekuences se shkronjave ne tekstin e dhene me heret duke i injoruar shenjat e pikesimit dhe hapesirat. Llogaritja e frekuences behet ne te njejten logjike sikur te _**Console App**_. Rezultati i fituar nga llogaritja shfaqet ne nje List View, por gjithashtu shfaqet edhe ne forme te nje _**Chart**_-i. Me poshte e kemi butonin _**Show Data**_ dhe _label_-en _English letter frequency_ , me klikimin e butonit shfaqet frekuenca e shkronjave ne gjuhen Angleze(te dhenat per kete pjese jane te futura manualisht nga GOOGLE) ne forme te nje _chart_-i. Kjo pjese e aplikacionit na ndohmon ne gjetjen e celesit per dekriptimin e kodit te Cesarit, duke e bere krahasimin e shkronjave. Pasiqe ta gjejme celesin , ate mund ta shenojme tek textbox-i ku shkruan _Enter Key Value_ , dhe me klikimin e butonit _Enter_ do te behet dekriptimi i ciphertextit me ane te celesit qe i kemi dhene si vlere.
 
