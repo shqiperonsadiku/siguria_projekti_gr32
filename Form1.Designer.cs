@@ -64,18 +64,19 @@ namespace siguriaProjektiDesktop
             // 
             // getFrequencyBtn
             // 
+            this.getFrequencyBtn.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.getFrequencyBtn.Location = new System.Drawing.Point(12, 232);
             this.getFrequencyBtn.Name = "getFrequencyBtn";
-            this.getFrequencyBtn.Size = new System.Drawing.Size(104, 26);
+            this.getFrequencyBtn.Size = new System.Drawing.Size(112, 34);
             this.getFrequencyBtn.TabIndex = 5;
             this.getFrequencyBtn.Text = "Get Frequency";
-            this.getFrequencyBtn.UseVisualStyleBackColor = true;
+            this.getFrequencyBtn.UseVisualStyleBackColor = false;
             this.getFrequencyBtn.Click += new System.EventHandler(this.getFrequencyBtn_Click);
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 264);
+            this.listView1.Location = new System.Drawing.Point(12, 272);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(155, 257);
             this.listView1.TabIndex = 7;
@@ -99,7 +100,7 @@ namespace siguriaProjektiDesktop
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(173, 264);
+            this.chart1.Location = new System.Drawing.Point(173, 272);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -127,12 +128,13 @@ namespace siguriaProjektiDesktop
             // 
             // enterBtn
             // 
-            this.enterBtn.Location = new System.Drawing.Point(301, 949);
+            this.enterBtn.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.enterBtn.Location = new System.Drawing.Point(287, 946);
             this.enterBtn.Name = "enterBtn";
-            this.enterBtn.Size = new System.Drawing.Size(87, 26);
+            this.enterBtn.Size = new System.Drawing.Size(101, 34);
             this.enterBtn.TabIndex = 16;
             this.enterBtn.Text = "Enter";
-            this.enterBtn.UseVisualStyleBackColor = true;
+            this.enterBtn.UseVisualStyleBackColor = false;
             this.enterBtn.Click += new System.EventHandler(this.enterBtn_Click);
             // 
             // label1
@@ -165,12 +167,13 @@ namespace siguriaProjektiDesktop
             // 
             // clearKeyBtn
             // 
-            this.clearKeyBtn.Location = new System.Drawing.Point(409, 949);
+            this.clearKeyBtn.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clearKeyBtn.Location = new System.Drawing.Point(407, 946);
             this.clearKeyBtn.Name = "clearKeyBtn";
-            this.clearKeyBtn.Size = new System.Drawing.Size(114, 28);
+            this.clearKeyBtn.Size = new System.Drawing.Size(114, 34);
             this.clearKeyBtn.TabIndex = 22;
             this.clearKeyBtn.Text = "Clear key value";
-            this.clearKeyBtn.UseVisualStyleBackColor = true;
+            this.clearKeyBtn.UseVisualStyleBackColor = false;
             this.clearKeyBtn.Click += new System.EventHandler(this.clearKeyBtn_Click);
             // 
             // keyValueTxt
@@ -183,32 +186,35 @@ namespace siguriaProjektiDesktop
             // 
             // clearData
             // 
-            this.clearData.Location = new System.Drawing.Point(93, 22);
+            this.clearData.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.clearData.Location = new System.Drawing.Point(102, 22);
             this.clearData.Name = "clearData";
-            this.clearData.Size = new System.Drawing.Size(75, 23);
+            this.clearData.Size = new System.Drawing.Size(78, 36);
             this.clearData.TabIndex = 24;
             this.clearData.Text = "Clear Data";
-            this.clearData.UseVisualStyleBackColor = true;
+            this.clearData.UseVisualStyleBackColor = false;
             this.clearData.Click += new System.EventHandler(this.clearData_Click);
             // 
             // loadFileBtn
             // 
+            this.loadFileBtn.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.loadFileBtn.Location = new System.Drawing.Point(12, 22);
             this.loadFileBtn.Name = "loadFileBtn";
-            this.loadFileBtn.Size = new System.Drawing.Size(75, 23);
+            this.loadFileBtn.Size = new System.Drawing.Size(84, 36);
             this.loadFileBtn.TabIndex = 25;
             this.loadFileBtn.Text = "Load File";
-            this.loadFileBtn.UseVisualStyleBackColor = true;
+            this.loadFileBtn.UseVisualStyleBackColor = false;
             this.loadFileBtn.Click += new System.EventHandler(this.loadFileBtn_Click);
             // 
             // showDataBtn
             // 
-            this.showDataBtn.Location = new System.Drawing.Point(12, 553);
+            this.showDataBtn.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.showDataBtn.Location = new System.Drawing.Point(12, 543);
             this.showDataBtn.Name = "showDataBtn";
-            this.showDataBtn.Size = new System.Drawing.Size(129, 23);
+            this.showDataBtn.Size = new System.Drawing.Size(129, 33);
             this.showDataBtn.TabIndex = 26;
             this.showDataBtn.Text = "Show data";
-            this.showDataBtn.UseVisualStyleBackColor = true;
+            this.showDataBtn.UseVisualStyleBackColor = false;
             this.showDataBtn.Click += new System.EventHandler(this.showDataBtn_Click);
             // 
             // Form1
